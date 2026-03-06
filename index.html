@@ -1,14 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chip-8_emu</title>
-    <script type="module" crossorigin src="./assets/index-E9W5L-2E.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DFOZdOZR.css">
-  </head>
-  <body>
-    <canvas id="chip8canvas"></canvas>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="./vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>chip-8_emu</title>
+		<script type="module" crossorigin src="./assets/index-CFXIEwHm.js"></script>
+		<link rel="stylesheet" crossorigin href="./assets/index-CwS3go8b.css">
+	</head>
+	<body>
+		<button id="fullscreen">◱</button>
+		<div class="emulator-container">
+			<div id="keypad-left" class="chip8-side-keypad">
+				<button data-key="Digit1">1</button>
+				<button data-key="Digit2">2</button>
+				<button data-key="KeyQ">4</button>
+				<button data-key="KeyW">5</button>
+				<button data-key="KeyA">7</button>
+				<button data-key="KeyS">8</button>
+				<button data-key="KeyZ">A</button>
+				<button data-key="KeyX">0</button>
+			</div>
+
+			<canvas id="chip8canvas"></canvas>
+
+			<div id="keypad-right" class="chip8-side-keypad">
+				<button data-key="Digit3">3</button>
+				<button data-key="Digit4">C</button>
+				<button data-key="KeyE">6</button>
+				<button data-key="KeyR">D</button>
+				<button data-key="KeyD">9</button>
+				<button data-key="KeyF">E</button>
+				<button data-key="KeyC">B</button>
+				<button data-key="KeyV">F</button>
+			</div>
+		</div>
+	</body>
 </html>
